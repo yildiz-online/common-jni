@@ -88,5 +88,4 @@ public final class NativePointerTest {
         p.delete();
         assertTrue(p.isDeleted());
     }
-
 }
