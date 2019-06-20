@@ -28,6 +28,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -45,9 +46,9 @@ public final class NativePointerTest {
         NativePointer p2 = NativePointer.create(1);
         assertEquals(p1, p2);
         assertEquals(p1, p1);
-        assertFalse(p1.equals(null));
-        assertFalse(p1.equals(1));
-        assertFalse(p1.equals(NativePointer.create(2)));
+        assertNotEquals(null, p1);
+        assertNotEquals(1, p1);
+        assertNotEquals(p1, NativePointer.create(2));
     }
 
     /***/
