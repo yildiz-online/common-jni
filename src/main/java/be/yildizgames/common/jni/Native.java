@@ -40,4 +40,5 @@ public interface Native {
      * Delete the native object.
      */
     void delete();
+
 }

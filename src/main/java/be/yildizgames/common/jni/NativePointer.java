@@ -117,4 +117,5 @@ public final class NativePointer {
     public String toString() {
         return String.valueOf(this.address);
     }
+
 }

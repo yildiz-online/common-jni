@@ -22,8 +22,10 @@
  *
  */
 
+package be.yildizgames.common.jni;
+
 /**
- * contains the classes to access and use JNI code.
  * @author Grégory Van den Borre
  */
-package be.yildizgames.common.jni;
+public class NativeException extends RuntimeException {
+}
